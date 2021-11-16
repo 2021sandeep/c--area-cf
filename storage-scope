@@ -1,0 +1,24 @@
+#include<stdio.h>
+void robo();
+void chitti();
+int x=5;
+void main()
+{
+    robo();
+    robo();
+    chitti();
+    chitti();
+    printf("%d /n ",x);
+}
+void robo()
+{
+    int x=1;
+    printf("%d\n",x);
+    x=x+1;
+}
+void chitti()
+{
+    static int y;
+    printf("%d\n",y);
+    y=y+1;
+}
